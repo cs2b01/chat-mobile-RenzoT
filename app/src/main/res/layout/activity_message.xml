@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wpp"
     >
 
     <RelativeLayout
@@ -16,18 +18,19 @@
 
         <EditText
             android:id="@+id/txtMessage"
+            android:background="@drawable/text1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:ems="10"
-            android:hint="Type here"
+            android:hint="  Type here..."
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@id/btnSend"
             />
         <Button
             android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=">>"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/send"
             android:onClick="onClickBtnSend"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"

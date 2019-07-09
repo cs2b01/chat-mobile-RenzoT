@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/login">
 
 
 
@@ -13,7 +14,14 @@
         android:layout_height="match_parent"
         android:id="@+id/loginLayout"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/logn" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,15 +29,19 @@
             android:gravity="center"
             android:orientation="vertical">
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#FFFF"
                 android:text="CSB01 CHAT"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="201810251 - Renzo Tenazoa"/>
+                android:textColor="#FFFF"
+                android:text="201810251 - Renzo Tenazoa"
+                android:layout_marginBottom="10dp"/>
 
         </LinearLayout>
 
@@ -43,11 +55,14 @@
                 android:id="@+id/lblUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"/>
+                android:textColor="#FFFF" />
             <EditText
                 android:id="@+id/txtUsername"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text1"
+                android:hint=" Username"
+                android:layout_marginBottom="3dp"
                 android:ems="10"/>
         </LinearLayout>
 
@@ -59,23 +74,26 @@
                 android:id="@+id/lblPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password"/>
+                android:textColor="#FFFF" />
             <EditText
                 android:id="@+id/txtPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:background="@drawable/text1"
+                android:hint=" Password"
                 android:ems="10"
                 android:inputType="textPassword"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:gravity="center">
             <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn"
                 android:text="Login"
                 android:onClick="onBtnLoginClicked"
                 />
